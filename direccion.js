@@ -1,17 +1,25 @@
 export default class Direccion {
-    constructor(calle,numeroExterior,numeroInterior,colonia,codigoPostal,ciudad,municipio){
-    }
-getFormatoCorto(){
-
+  constructor(
+    calle,
+    numeroExterior,
+    numeroInterior,
+    colonia,
+    codigoPostal,
+    ciudad,
+    municipio
+  ) {
+    this.calle = calle;
+    this.numeroExterior = numeroExterior;
+    this.numeroInterior = numeroInterior;
+    this.colonia = colonia;
+    this.codigoPostal = codigoPostal;
+    this.ciudad = ciudad;
+    this.municipio = municipio;
+  }
+  getFormatoCorto() {
+    return `${this.calle}, ${this.numeroExterior},${this.numeroInterior}, ${this.colonia}, ${this.codigoPostal}, ${this.ciudad}, ${this.municipio}`;
+  }
+  getFormatoExtendido() {
+    return `${this.calle}, ${this.numeroExterior},${this.numeroInterior}, ${this.colonia}, ${this.codigoPostal}, ${this.ciudad}, ${this.municipio}`;
+  }
 }
-getFormatoExtendido(){
-    
-}
-}
-let pepe = new Direccion ("cerrada de la hacienda" + 43 );
-let ramon = new Direccion("Alfonozo Reyes" + 434, + "interior " + 3);
-let juan = new Direccion ("bahía de manzanillo" + 23 + "interior"+6);
-
-pepe.getFormatoCorto();
-ramon.getFormatoExtendido();
-
