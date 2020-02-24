@@ -11,7 +11,7 @@ this.minuto = minuto
 this.periodo = periodo
 }
 getFormato12(){
-    return (`${this.hora}, ${this.minuto}, ${this.periodo}`)
+    return (`${this.hora}: ${this.minuto}. ${this.periodo}`)
 
 
 }

@@ -4,6 +4,6 @@ export default class Precio {
     };
 
 getPrecio(){
-    return(`${this.valor}`)
+    return(`$${this.valor}`)
 }
 }

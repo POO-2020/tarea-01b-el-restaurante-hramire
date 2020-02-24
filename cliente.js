@@ -5,6 +5,7 @@ export default class Cliente{
         this.telefono = telefono
     }
     getPerfil(){
+        return (`${this.nombre},${this.direccion.getFormatoCorto()}, ${this.telefono}`)
         
     }
 }

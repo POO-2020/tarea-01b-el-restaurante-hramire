@@ -17,7 +17,7 @@ export default class Direccion {
     this.municipio = municipio;
   }
   getFormatoCorto() {
-    return `${this.calle}, ${this.numeroExterior},${this.numeroInterior}, ${this.colonia}, ${this.codigoPostal}, ${this.ciudad}, ${this.municipio}`;
+    return `${this.calle}, ${this.numeroExterior}`
   }
   getFormatoExtendido() {
     return `${this.calle}, ${this.numeroExterior},${this.numeroInterior}, ${this.colonia}, ${this.codigoPostal}, ${this.ciudad}, ${this.municipio}`;

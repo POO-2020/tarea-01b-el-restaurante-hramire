@@ -1,4 +1,4 @@
-export default class Pedido{
+export default class ElementoPedido{
     /**
      * 
      * @param {string} producto producto vendido 
@@ -9,6 +9,6 @@ export default class Pedido{
         this.cantidad = cantidad
     }
     getDescripcion(){
-
+       return (`${this.cantidad} X ${this.producto.nombre} ${this.producto.precio.valor * this.cantidad}`)
     }
 } 
